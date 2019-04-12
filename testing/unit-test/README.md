@@ -19,7 +19,7 @@ class block_course_checker_attendance_testcase extends \advanced_testcase {
     $this->generator = $this->getDataGenerator();
 ```
 
-#### Working with users
+#### Generate, enrol and assign user
 
 ```php
 // Generate user
@@ -29,14 +29,56 @@ $teacher = $this->generator->create_user(['email'=>'teacher@moodle.ch']);
 // Enrol user in course
 $this->generator->enrol_user($teacher->id, $this->course->id, 'teacher', 'manual');
 
-// Switch $USER
+/**
+* Assign a role to the current user
+* 1 Manager / Admin user
+* 4 Teacher
+* 5 Student
+*
+* @see mld_role table
+*/
+$this->generator->role_assign($roleid, $user->id, false);
+```
+
+#### Switch user
+
+```php
 $this->setUser($teacher);
 $this->setAdminUser();
 $this->setGuestUser();
-
 ```
 
-### Testing The Data Generator
+### Fake Data
+
+#### Faking random simple data
+
+{% tabs %}
+{% tab title="Call" %}
+```php
+$word = self::word();
+```
+
+Hint: This is not part of moodle core
+{% endtab %}
+
+{% tab title="Implementation" %}
+```php
+/**
+ * Returns a random word
+ *
+ * @param int $len
+ * @return bool|string
+ */
+protected static function word($len = 10) {
+    $word = array_merge(range('a', 'z'), range('A', 'Z'));
+    shuffle($word);
+    return substr(implode($word), 0, $len);
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Testing the data generator
 
 #### Generate a new instance of an attendance activity
 
@@ -53,5 +95,20 @@ protected function create_new_attendance_activity($course){
 }
 ```
 
+#### Generate a new block instance
 
+```php
+$block = $this->generator->create_block('quote');
+```
+
+#### Assign the required capabilities to the block
+
+@todo this need improvement an testing
+
+```php
+$contextid = \context_block::instance($block->id)->id;
+/** @todo this is not working on the current user */
+$roleid = $this->assignUserCapability('moodle/block/quote:add', $contextid);
+$this->unassignUserCapability('enrol/manual:enrol', $context1->id, $roleid);
+```
 
