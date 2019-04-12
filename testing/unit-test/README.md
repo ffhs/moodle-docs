@@ -105,6 +105,8 @@ $block = $this->generator->create_block('quote');
 
 @todo this need improvement an testing
 
+use: `class block_quote_external_testcase extends \externallib_advanced_testcase`
+
 ```php
 $contextid = \context_block::instance($block->id)->id;
 /** @todo this is not working on the current user */
