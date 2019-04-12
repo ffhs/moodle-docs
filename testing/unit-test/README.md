@@ -78,6 +78,26 @@ protected static function word($len = 10) {
 {% endtab %}
 {% endtabs %}
 
+#### Faking with faker class
+
+> Not yet implemented, but use this format if you implement it
+
+{% tabs %}
+{% tab title="Call" %}
+```php
+$faker->name;
+$faker->address;
+$faker->text;
+$faker->numberBetween(10,20);
+..
+```
+{% endtab %}
+
+{% tab title="Result" %}
+
+{% endtab %}
+{% endtabs %}
+
 ### Testing the data generator
 
 #### Generate a new instance of an attendance activity
