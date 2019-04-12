@@ -23,3 +23,17 @@ class block_simplehtml extends block_base {
 }
 ```
 
+### Block configuration via overriding methods
+
+```php
+public function hide_header() {
+  return true;
+}
+
+// Enable global configuration
+public function has_config() {
+  return true;
+}
+
+```
+
