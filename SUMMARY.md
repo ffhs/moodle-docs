@@ -35,9 +35,7 @@
 * [Unit Test](testing/unit-test/README.md)
   * [Test a filter](testing/unit-test/test-a-filter.md)
 
-## Tutorials
-
 ## FAQ
 
-* [General Questions](faq-1/faq.md)
+* [General Questions](faq/faq.md)
 
