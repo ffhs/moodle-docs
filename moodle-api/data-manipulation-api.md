@@ -52,3 +52,21 @@ try {
 }
 ```
 
+### Searching in the database
+
+```php
+global $DB;
+
+$like1 = $DB->sql_like('shortname', ':like1', false);
+$like2 = $DB->sql_like('idnumber', ':like2', false);
+
+$params = array(
+    'like1' => '%' . $DB->sql_like_escape($searchtext) . '%',
+    'like2' => '%' . $DB->sql_like_escape($searchtext) . '%',
+    'frameworkid' => $competencyframeworkid
+);
+
+$sql = 'competencyframeworkid = :frameworkid AND ((' . $like1 . ') OR (' . $like2 . '))';
+$records = $DB->get_records_select(self::TABLE, $sql, $params, 'path, sortorder ASC', '*');
+```
+
