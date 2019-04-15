@@ -16,6 +16,13 @@ $DB->get_record_select(
 )
 ```
 
+#### Get data directly from the database using a sql query
+
+```php
+$catresult = $DB->get_records_sql('SELECT id FROM {course_categories} WHERE path LIKE :categorypath',
+    ['catpath' => $catpath])
+```
+
 ### Insert data directly to the database
 
 ```php

@@ -19,6 +19,7 @@
 * [Block API](moodle-api/block-api/README.md)
   * [Edit Form](moodle-api/block-api/edit-form.md)
 * [Data Manipulation API](moodle-api/data-manipulation-api.md)
+* [External Functions API](moodle-api/external-functions-api.md)
 
 ## Moodle Configuration
 
