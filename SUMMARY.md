@@ -15,7 +15,8 @@
 
 ## Moodle API
 
-* [Course API](moodle-api/course-api.md)
+* [Course API](moodle-api/course-api/README.md)
+  * [Course Modules $cm](moodle-api/course-api/course-modules-usdcm.md)
 * [Block API](moodle-api/block-api/README.md)
   * [Edit Form](moodle-api/block-api/edit-form.md)
 * [Data Manipulation API](moodle-api/data-manipulation-api.md)

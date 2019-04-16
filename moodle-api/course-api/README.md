@@ -245,3 +245,11 @@ $modinfo = get_fast_modinfo($course);
 $cm = $modinfo->get_cm($cmid);
 ```
 
+### Sections
+
+#### Hide a section
+
+```php
+set_section_visible($params->courseid, $params->sectionnum, 0);
+```
+
