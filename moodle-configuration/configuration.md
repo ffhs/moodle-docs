@@ -39,6 +39,12 @@ stdClass Object
 
 {% page-ref page="../moodle-api/course-api/" %}
 
+### Get user preferences
+
+```php
+get_user_preferences($name = null, $default = null, $user = null) 
+```
+
 ### Get plugin configurations
 
 {% tabs %}
