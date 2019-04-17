@@ -35,5 +35,10 @@ public function has_config() {
   return true;
 }
 
+// Locations where block can be displayed.
+public function applicable_formats() {
+  return array('my' => true);
+}
+
 ```
 
