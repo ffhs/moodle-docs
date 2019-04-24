@@ -1,4 +1,4 @@
 # Introduction
 
-Visit: [https://gidelon-godwin.gitbook.io/moodle/](https://gidelon-godwin.gitbook.io/moodle/)
+Visit: [https://moodle.gitbook.io/moodle/](https://moodle.gitbook.io/moodle/)
 
