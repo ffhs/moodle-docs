@@ -17,6 +17,18 @@ try{
 
 * mod/forum:replypost
 
+### Check if current user has a capability in a specific course category
+
+```php
+// $catid must be set, if not it will not check the capability.
+if (isset($catid) && 
+    !has_capability('moodle/course:upload', context_coursecat::instance($catid))) {
+        return false;
+}
+
+// Do more stuff here.
+```
+
 ### Permission
 
 Permission is a value assigned for capability
