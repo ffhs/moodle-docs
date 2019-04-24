@@ -179,6 +179,28 @@ enrol_get_my_courses(['id', 'enddate'], 'startdate DESC,fullname ASC');
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="Call" %}
+```php
+function course_get_enrolled_courses_for_logged_in_user(
+    int $limit = 0,
+    int $offset = 0,
+    string $sort = null,
+    string $fields = null,
+    int $dbquerylimit = COURSE_DB_QUERY_LIMIT,
+    array $includecourses = [],
+    array $hiddencourses = []
+)
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```php
+
+```
+{% endtab %}
+{% endtabs %}
+
 ### Get all modules in a course
 
 {% tabs %}
