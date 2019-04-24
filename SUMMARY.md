@@ -1,44 +1,32 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [General](moodle/README.md)
-  * [Security](moodle/security/README.md)
-    * [Capability](moodle/security/capability.md)
-    * [Roles](moodle/security/roles.md)
-  * [Scheduler](moodle/scheduler/README.md)
-    * [Adhoc Sheduler](moodle/scheduler/adhoc-sheduler.md)
-    * [Cron Sheduler](moodle/scheduler/cron-sheduler.md)
-  * [Context](moodle/context.md)
-  * [Logging](moodle/logging.md)
-  * [URL generation](moodle/url-generation.md)
-  * [Templates \(mustache\)](moodle/templates-mustache.md)
-
-## Moodle API
-
-* [Course API](moodle-api/course-api/README.md)
-  * [Course Modules $cm](moodle-api/course-api/course-modules-usdcm.md)
-* [Block API](moodle-api/block-api/README.md)
-  * [Edit Form](moodle-api/block-api/edit-form.md)
-* [Data Manipulation API](moodle-api/data-manipulation-api.md)
-* [more...](moodle-api/more.../README.md)
-  * [External Functions API](moodle-api/more.../external-functions-api.md)
-
-## Moodle Configuration
-
-* [Configuration](moodle-configuration/configuration.md)
-* [Global Settings](moodle-configuration/settings/README.md)
-  * [Globlal $CNF](moodle-configuration/settings/globlal-usdcnf.md)
-
-## Webservices
-
-* [Webservices](webservices/webservices.md)
-
-## Testing
-
-* [Unit Test](testing/unit-test/README.md)
-  * [Test a filter](testing/unit-test/test-a-filter.md)
-
-## FAQ
-
-* [General Questions](faq/faq.md)
+* [General](general/README.md)
+  * [Security](general/security/README.md)
+    * [Capability](general/security/capability.md)
+    * [Roles](general/security/roles.md)
+  * [Scheduler](general/scheduler/README.md)
+    * [Adhoc](general/scheduler/adhoc.md)
+    * [Cron](general/scheduler/cron.md)
+  * [Context](general/context.md)
+  * [Logging](general/logging.md)
+  * [URL generation](general/url-generation.md)
+  * [Templates](general/templates/README.md)
+    * [Mustache](general/templates/mustache.md)
+* [Configuration](configuration/README.md)
+  * [Basics](configuration/basics.md)
+  * [Global Settings](configuration/global-settings/README.md)
+    * [Globlal $CNF](configuration/global-settings/globlal-usdcnf.md)
+* [Core API](api/README.md)
+  * [Webservices](api/webservices.md)
+  * [Course](api/course/README.md)
+    * [Course Modules $cm](api/course/course-modules-usdcm.md)
+  * [Block](api/block/README.md)
+    * [Edit Form](api/block/edit-form.md)
+  * [Data Manipulation](api/data-manipulation.md)
+* [Testing](testing/README.md)
+  * [PHPUnit](testing/phpunit/README.md)
+    * [Test a filter](testing/phpunit/test-a-filter.md)
+  * [Behat](testing/behat.md)
+* [FAQ](faq.md)
 

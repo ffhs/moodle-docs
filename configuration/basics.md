@@ -1,4 +1,4 @@
-# Configuration
+# Basics
 
 ### Get the configuration of the current course
 
@@ -37,7 +37,7 @@ stdClass Object
 
 * If the response doesn't fit your needs. Maybe your are more happy with the default course object. `get_course($courseid)` .
 
-{% page-ref page="../moodle-api/course-api/" %}
+{% page-ref page="../api/course/" %}
 
 ### Get user preferences
 

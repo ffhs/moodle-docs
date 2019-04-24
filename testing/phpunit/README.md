@@ -1,4 +1,15 @@
-# Unit Test
+---
+description: >-
+  Moodle 2.3 and later fully supports PHPUnit tests as part of the code. These
+  are automated tests of very low-level code functionality that a developer
+  should write as part of any new code.
+---
+
+# PHPUnit
+
+### Introduction
+
+More information ca be found here [https://docs.moodle.org/dev/Writing\_PHPUnit\_tests](https://docs.moodle.org/dev/Writing_PHPUnit_tests)
 
 ### Advanced Testcase
 

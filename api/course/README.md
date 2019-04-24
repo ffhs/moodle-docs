@@ -1,4 +1,4 @@
-# Course API
+# Course
 
 ### Get a course 
 

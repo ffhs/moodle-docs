@@ -22,7 +22,7 @@ redirect($url, 'optional message', 10);
 
 For Base-URL Media-Urls and so on look here:
 
-{% page-ref page="../moodle-configuration/settings/globlal-usdcnf.md" %}
+{% page-ref page="../configuration/global-settings/globlal-usdcnf.md" %}
 
 ### Get an url of an module
 

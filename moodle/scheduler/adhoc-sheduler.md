@@ -1,2 +1,0 @@
-# Adhoc Sheduler
-

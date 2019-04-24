@@ -112,5 +112,5 @@ if ($ADMIN->fulltree) {
 }
 ```
 
-{% page-ref page="../../moodle-configuration/settings/" %}
+{% page-ref page="../../configuration/global-settings/" %}
 

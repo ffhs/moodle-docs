@@ -1,4 +1,4 @@
-# Data Manipulation API
+# Data Manipulation
 
 ### Get data directly from the database
 
