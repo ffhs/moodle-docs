@@ -196,7 +196,7 @@ function course_get_enrolled_courses_for_logged_in_user(
 
 {% tab title="Response" %}
 ```php
-
+final class Generator
 ```
 {% endtab %}
 {% endtabs %}
