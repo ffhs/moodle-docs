@@ -53,7 +53,7 @@ get_config('block_exam_overview', 'sebversionwindows')
 ### More informations
 
 {% hint style="warning" %}
-In a block plugin, the main block class must override the following method, otherwise moodle will not know that a settings.php file is present.
+In a block plugin, the main block class must override the following method, otherwise **moodle will not know** that a settings.php file is present.
 
 ```php
 /**
@@ -65,5 +65,41 @@ public function has_config() {
 ```
 {% endhint %}
 
+{% hint style="warning" %}
+It is **not possible** to grant access to admin configurations for **other roles** than admin. Moodle checks the following internally:
 
+```php
+has_capability('moodle/site:config', context_system::instance());
+```
+
+Usually you don't want to give that permission to other global roles
+{% endhint %}
+
+### Advanced
+
+#### How the tree is built
+
+Take a look at the following functions: \(No explanation, just for knowing what to google for\)
+
+{% code-tabs %}
+{% code-tabs-item title="settings.php" %}
+```php
+$examoverview_category = new admin_category('block_exam_overview', 'Exam Overview');
+$ADMIN->add('blocksettings', $examoverview_category);
+
+$settings = new admin_settingpage(
+        'examoverviewsettings',
+        'Exam Overview Subsettings',
+        'block/exam_overview:capabilityxyz',
+        false,
+        context_system::instance()
+);
+$ADMIN->add('block_exam_overview', $settings);
+
+[..]
+$settings->add(new admin_setting_pickroles($name, $title, $description, $default));
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
