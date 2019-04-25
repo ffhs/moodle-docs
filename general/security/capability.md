@@ -2,7 +2,7 @@
 
 ### Check if current user has a capability in a specific course
 
-A convenience function that tests has\_capability, and displays an error if the user does not have that capability.
+A conveniend function that tests has\_capability, and displays an error if the user does not have that capability.
 
 ```php
 $coursecontext = context_course::instance($course->id);
@@ -12,10 +12,6 @@ try{
     // Handle Exception
 }
 ```
-
-### Examples of capabilities
-
-* mod/forum:replypost
 
 ### Check if current user has a capability in a specific course category
 
@@ -28,6 +24,16 @@ if (isset($catid) &&
 
 // Do more stuff here.
 ```
+
+### Check if a user can access global settings/configuration
+
+```php
+has_capability('moodle/site:config', context_system::instance());
+```
+
+### Examples of capabilities
+
+* mod/forum:replypost
 
 ### Permission
 
