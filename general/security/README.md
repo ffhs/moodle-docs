@@ -112,5 +112,7 @@ if ($ADMIN->fulltree) {
 }
 ```
 
+More informations about settings can be found here:
+
 {% page-ref page="../../configuration/global-settings/" %}
 
