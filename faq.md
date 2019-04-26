@@ -30,6 +30,41 @@ public function __construct() {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+## What is a moodle component?
+
+A component can be a **moodle plugin**, such as an activity or an **core subsystem**.
+
+The term component is used in some places such as in the file api.
+
+{% code-tabs %}
+{% code-tabs-item title="lib/filelib.php" %}
+```php
+function file_save_draft_area_files(
+    $draftitemid, 
+    $contextid, 
+    $component, 
+    $filearea, 
+    $itemid, 
+    array $options=null, 
+    $text=null, 
+    $forcehttps=false) {
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+See also the DB table **mdl\_files**
+
+The class `core_component` provides functions such as:
+
+```php
+classloader()
+fetch_subsystems()
+fetch_plugintypes()
+fetch_plugins()
+load_classes()
+```
+
 ## More...
 
 More...
