@@ -53,7 +53,11 @@ function file_save_draft_area_files(
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-See also the DB table **mdl\_files**
+The function `get_string` uses the **component** keyword as well
+
+```php
+get_string('managefeeds', 'block_rss_client') // identifier:, component:
+```
 
 The class `core_component` provides functions such as:
 
@@ -64,6 +68,8 @@ fetch_plugintypes()
 fetch_plugins()
 load_classes()
 ```
+
+> See also the DB table **mdl\_files**
 
 ## More...
 
