@@ -1,4 +1,8 @@
-# $GET and $POST Parameter
+---
+description: Retriefing $GET and $POST parameters
+---
+
+# Parameter
 
 {% code-tabs %}
 {% code-tabs-item title="lib/moodlelib.php" %}
