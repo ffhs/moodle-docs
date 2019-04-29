@@ -267,11 +267,37 @@ $modinfo = get_fast_modinfo($course);
 $cm = $modinfo->get_cm($cmid);
 ```
 
-### Sections
+## Sections
 
-#### Hide a section
+### Hide a section
 
 ```php
 set_section_visible($params->courseid, $params->sectionnum, 0);
 ```
+
+### Loop over course modules and get section informations
+
+```php
+/** @var \course_modinfo $modinfo */
+$modinfo = get_fast_modinfo($course->id, -1);
+    
+/** @var cm_info[] $instances */
+$instances = $modinfo->get_instances_of($modname);
+foreach ($instances as $module => $cm) {
+    $section = $modinfo->get_section_info($sectionnum);
+    if ($section->visible != 1) {
+        continue;
+    }
+}
+```
+
+#### 
+
+{% code-tabs %}
+{% code-tabs-item title="lib/modinfolib.php" %}
+```php
+get_section_info_all()
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
