@@ -34,7 +34,7 @@ public function __construct() {
 
 A component can be a **moodle plugin**, such as an activity or an **core subsystem**.
 
-The term component is used in some places such as in the file api.
+* The term component is used in some places such as in the file api.
 
 {% code-tabs %}
 {% code-tabs-item title="lib/filelib.php" %}
@@ -53,13 +53,13 @@ function file_save_draft_area_files(
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-The function `get_string` uses the **component** keyword as well
+* The function `get_string` uses the **component** keyword as well
 
 ```php
 get_string('managefeeds', 'block_rss_client') // identifier:, component:
 ```
 
-The class `core_component` provides functions such as:
+* The class `core_component` provides functions such as:
 
 ```php
 classloader()
