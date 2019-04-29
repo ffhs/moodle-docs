@@ -1,6 +1,6 @@
 # Course
 
-### Get a course 
+## Get a course 
 
 #### Get a course by its id
 
