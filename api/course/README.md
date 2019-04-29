@@ -291,12 +291,15 @@ foreach ($instances as $module => $cm) {
 }
 ```
 
-#### 
+#### Get all section informations in a course
 
 {% code-tabs %}
 {% code-tabs-item title="lib/modinfolib.php" %}
 ```php
-get_section_info_all()
+/** @var \course_modinfo $modinfo */
+$modinfo = get_fast_modinfo($course->id, -1);
+
+$modinfo->get_section_info_all()
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
