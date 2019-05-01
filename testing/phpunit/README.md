@@ -69,7 +69,9 @@ $this->setGuestUser();
 $word = self::word();
 ```
 
+{% hint style="info" %}
 Hint: This is not part of moodle core
+{% endhint %}
 {% endtab %}
 
 {% tab title="Implementation" %}
