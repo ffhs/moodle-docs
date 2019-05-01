@@ -7,11 +7,11 @@ description: >-
 
 # PHPUnit
 
-### Introduction
+## Introduction
 
 More information ca be found here [https://docs.moodle.org/dev/Writing\_PHPUnit\_tests](https://docs.moodle.org/dev/Writing_PHPUnit_tests)
 
-### Advanced Testcase
+## Advanced Testcase
 
 #### Resetting the test database and get a data generator \(faker\)
 
@@ -59,7 +59,7 @@ $this->setAdminUser();
 $this->setGuestUser();
 ```
 
-### Fake Data
+## Fake Data
 
 #### Faking random simple data
 

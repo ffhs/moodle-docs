@@ -1,6 +1,6 @@
 # Data Manipulation
 
-### Get data directly from the database
+## Get data directly from the database
 
 ```php
 $user = $DB->get_record('user', ['id' => '1']);
@@ -23,7 +23,7 @@ $catresult = $DB->get_records_sql('SELECT id FROM {course_categories} WHERE path
     ['catpath' => $catpath])
 ```
 
-### Insert data directly to the database
+## Insert data directly to the database
 
 ```php
 protected function create_new_attendance_session($attendance) {
@@ -52,7 +52,7 @@ try {
 }
 ```
 
-### Searching in the database
+## Searching in the database
 
 ```php
 global $DB;

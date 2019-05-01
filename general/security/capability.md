@@ -34,6 +34,9 @@ has_capability('moodle/site:config', context_system::instance());
 ### Examples of capabilities
 
 * mod/forum:replypost
+* moodle/site:config
+* moodle/course:upload
+* ...
 
 ### Permission
 
@@ -42,6 +45,6 @@ Permission is a value assigned for capability
 ## Warnings
 
 {% hint style="warning" %}
-Be careful when you remove a capability in `access.php` you have to remove all occourences in your code
+Be careful when you remove a capability in `access.php` you have to remove all occourences in your code.
 {% endhint %}
 

@@ -1,6 +1,6 @@
 # Access restrictions
 
-### Access any special acccess restrictions on a activity
+### Access any special `acccess restrictions` on a activity
 
 {% hint style="warning" %}
 Usually this is not nessessary, since you can check all access restrictions by just checking the uservisibility on a **course module**. 
