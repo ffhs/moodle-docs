@@ -295,7 +295,7 @@ foreach ($instances as $module => $cm) {
 ```
 
 {% hint style="info" %}
-`uservisible` takes also the **section** and the **access restrictions**  such as group restrictions or user email restriction into account 
+`uservisible` takes also the **section** and the **access restrictions**  such as group restrictions or user email restriction into account.
 {% endhint %}
 
 #### Get all section informations in a course
