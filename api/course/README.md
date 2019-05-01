@@ -288,8 +288,15 @@ foreach ($instances as $module => $cm) {
     if ($section->visible != 1) {
         continue;
     }
+    if (!$cm->uservisible) {
+        continue;
+    }
 }
 ```
+
+{% hint style="info" %}
+`uservisible` takes also the **section** and the **access restrictions**  such as group restrictions or user email restriction into account 
+{% endhint %}
 
 #### Get all section informations in a course
 
