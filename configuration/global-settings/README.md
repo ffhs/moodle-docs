@@ -6,6 +6,8 @@ description: >-
 
 # Global Settings
 
+## Define global settings in `settings.php`
+
 ### Add a checkbox setting
 
 ```php
@@ -18,6 +20,8 @@ $settings->add(new admin_setting_configcheckbox(
 
 ### Add a role selection setting
 
+{% tabs %}
+{% tab title="Setting" %}
 ```php
 $name = 'block_exam_overview/rolesallowedtoshowallexams';
 $title = get_string('rolesallowedtoshowallexams', 'block_exam_overview', null, true);
@@ -25,12 +29,40 @@ $description = get_string('rolesallowedtoshowallexams_desc', 'block_exam_overvie
 $default = array('editingteacher');
 $settings->add(new admin_setting_pickroles($name, $title, $description, $default));
 ```
+{% endtab %}
+
+{% tab title="Examples" %}
+```php
+$systemrolesids = get_config('block_exam_overview', 'rolesallowedtoshowallexams')
+user_has_role_in_system($USER->id, $systemrolesids)
+```
+
+```php
+function user_has_role_in_system($userid, $systemrolesids) {
+    // Split system role shortnames by comma.
+    $showforroles = explode(',', $systemrolesids);
+    // Retrieve the assigned roles for the system context only once and remember for next calls of this function.
+    static $rolesinsystemids;
+    if ($rolesinsystemids == null) {
+        // Get the assigned roles.
+        $rolesinsystem = get_user_roles(context_system::instance(), $userid);
+        $rolesinsystemids = [];
+        foreach ($rolesinsystem as $role) {
+            array_push($rolesinsystemids, $role->roleid);
+        }
+    }
+    // Check if the user has at least one of the required roles.
+    return count(array_intersect($rolesinsystemids, $showforroles)) > 0;
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### Moore setting options
 
 > There are many more at `lib/adminlib.php`
 
-### Access Global Settings
+## Access Global Settings
 
 #### With `$CFG`
 
@@ -75,9 +107,9 @@ has_capability('moodle/site:config', context_system::instance());
 Usually you don't want to give that permission to other global roles
 {% endhint %}
 
-### Advanced
+## Advanced global settings
 
-#### How the tree is built
+#### How the global settings tree is built
 
 Take a look at the following functions: \(No explanation, just for knowing what to google for\)
 
