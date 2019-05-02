@@ -75,17 +75,5 @@ stdClass Object (
 get_user_preferences($name = null, $default = null, $user = null) 
 ```
 
-### Get plugin configurations
-
-{% tabs %}
-{% tab title="Call" %}
-@todo
-{% endtab %}
-
-{% tab title="Response" %}
-
-{% endtab %}
-{% endtabs %}
-
 
 
