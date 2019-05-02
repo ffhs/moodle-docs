@@ -71,9 +71,46 @@ stdClass Object (
 
 ### Get user preferences
 
+{% tabs %}
+{% tab title="Call" %}
 ```php
 get_user_preferences($name = null, $default = null, $user = null) 
 ```
+{% endtab %}
+
+{% tab title="Response" %}
+```text
+Array
+(
+    [admin_bookmarks] => adminnotifications
+    [block_enhanced_course_overview-last_tab] => FS19
+    [block_myoverview_last_tab] => courses
+    [core_message_migrate_data] => 1
+    [drawer-open-nav] => true
+    [filemanager_recentviewmode] => 1
+    [filepicker_recentlicense] => allrightsreserved
+    [filepicker_recentrepository] => 3
+    [filepicker_recentviewmode] => 2
+    [ifirst] => 
+    [ilast] => 
+    [lesson_view] => collapsed
+    [login_failed_count_since_success] => 1
+    [quiz_overview_slotmarks] => 1
+    [quiz_report_pagesize] => 30
+    [topcoll_toggle_15] => x
+    [topcoll_toggle_16] => ij
+    [topcoll_toggle_17] => v
+    [topcoll_toggle_18] => v
+    [topcoll_toggle_19] => v
+    [userselector_autoselectunique] => 0
+    [userselector_preserveselected] => 0
+    [userselector_searchanywhere] => 0
+    [_lastloaded] => 1556809923
+)
+
+```
+{% endtab %}
+{% endtabs %}
 
 
 
