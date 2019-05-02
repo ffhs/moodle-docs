@@ -1,6 +1,8 @@
 # Basics
 
-### Get the configuration of the current course
+## Get configurations
+
+#### Get the configuration of the current course
 
 {% tabs %}
 {% tab title="Call" %}
@@ -31,6 +33,34 @@ stdClass Object
     [visible] => 1
 )
 
+```
+{% endtab %}
+{% endtabs %}
+
+#### Get the configuration of your plugin
+
+{% tabs %}
+{% tab title="Call" %}
+```php
+$mypluginconfig = get_config('block_exam_overview');
+```
+
+```php
+$sebversionmacos = get_config('block_exam_overview', 'sebversionmacos')
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```text
+stdClass Object ( 
+    [sebversionmacos] => 2.2.3 
+    [sebversionwindows] => 2.2.2 
+    [version] => 2019043000 
+)
+```
+
+```text
+2.2.3
 ```
 {% endtab %}
 {% endtabs %}
