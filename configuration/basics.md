@@ -69,7 +69,9 @@ stdClass Object (
 
 {% page-ref page="../api/course/" %}
 
-### Get user preferences
+## Get user preferences
+
+[https://docs.moodle.org/dev/Preference\_API](https://docs.moodle.org/dev/Preference_API)
 
 {% tabs %}
 {% tab title="Call" %}
@@ -112,5 +114,9 @@ Array
 {% endtab %}
 {% endtabs %}
 
+## Get user settings
 
+```text
+@todo
+```
 
