@@ -6,7 +6,7 @@ description: 'Roles assigned to Users (Students, Teachers)'
 
 ### Global Roles
 
-### Roles on a contex
+### Roles in a contex
 
 ### Get all roles a user belongs to
 
@@ -60,4 +60,15 @@ if ($rolesinsystemids == null) {
 [https://github.com/moodleuulm/moodle-local\_boostnavigation/blob/master/locallib.php](https://github.com/moodleuulm/moodle-local_boostnavigation/blob/master/locallib.php)
 {% endtab %}
 {% endtabs %}
+
+### Check if a user has a certain role somewhere on moodle
+
+@todo \(function not tested\)
+
+```php
+if (user_has_role_assignment($user->id, $roleid))
+    echo "User is a teacher in some course";
+```
+
+
 
