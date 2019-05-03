@@ -95,6 +95,8 @@ protected static function word($len = 10) {
 
 > Not yet implemented, but use this format if you implement it
 
+Have a look at https://github.com/fzaninotto/Faker
+
 {% tabs %}
 {% tab title="Call" %}
 ```php
