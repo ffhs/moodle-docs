@@ -233,6 +233,10 @@ foreach ($modinfo->get_cms() as $cmid => $cm) {
         // User cannot access the activity, but on the course page they will
         // see a link to it, greyed-out, with information (HTML format) from
         // $cm->availableinfo about why they can't access it.
+    } else if ($cm->has_view) {
+        // True if this module has a 'view' page that should be linked to in navigation
+        // etc (note: modules may still have a view.php file, but return false if this is not
+        // intended to be linked to from 'normal' parts of the interface; this is what label does).    
     } else {
         // User cannot access the activity and they will not see it at all.
     }

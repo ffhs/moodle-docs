@@ -28,3 +28,7 @@ $CFG->dataroot
 $CFG->dirroot = __DIR__;
 ```
 
+```php
+require_once($CFG->dirroot .'/blog/lib.php');
+```
+

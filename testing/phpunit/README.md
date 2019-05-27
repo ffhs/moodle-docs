@@ -9,7 +9,9 @@ description: >-
 
 ## Introduction
 
-More information ca be found here [https://docs.moodle.org/dev/Writing\_PHPUnit\_tests](https://docs.moodle.org/dev/Writing_PHPUnit_tests)
+More information ca be found here 
+
+[https://docs.moodle.org/dev/Writing\_PHPUnit\_tests](https://docs.moodle.org/dev/Writing_PHPUnit_tests)
 
 ## Advanced Testcase
 
@@ -147,5 +149,21 @@ $contextid = \context_block::instance($block->id)->id;
 /** @todo this is not working on the current user */
 $roleid = $this->assignUserCapability('moodle/block/quote:add', $contextid);
 $this->unassignUserCapability('enrol/manual:enrol', $context1->id, $roleid);
+```
+
+## Asserting
+
+### Test if two arrays share the same content
+
+```php
+$this->assertEquals($expected, $actual, true);
+```
+
+### Test if two array have the same content AND the elements are in the same order
+
+$t~~his-&gt;assertEquals\($expected, $actual, true\);~~
+
+```php
+$this->assertEquals(json_encode($expected), json_encode($actual));
 ```
 

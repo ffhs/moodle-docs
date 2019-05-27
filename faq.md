@@ -71,9 +71,57 @@ load_classes()
 
 > See also the DB table **mdl\_files**
 
-## More...
+## I've created a Moodle Ajax Service - The only result is an popup that says `undefinied`, what can be done? No error message, no log.. nothing :\(
 
-More...
+* [ ] Check if the `classname`, `methodname` and `classpath` in `/db/services.php` are correct
+* [ ] Increment the plugins version number, remove the block
+* [ ] Check the `require_once` implementation:
+
+Replace the following \(temporarily!\):
+
+{% code-tabs %}
+{% code-tabs-item title="lib/externallib.php" %}
+```php
+require_once($function->classpath);
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+with
+
+```php
+// ---------------------------
+if('<myfunctionname>' == $function->name) {
+    file_put_contents('/data/moodledata/steps.json', 'step9 - '.$function->classpath, FILE_APPEND);
+}
+require_once($function->classpath);
+
+if('<myfunctionname>' == $function->name) {
+    file_put_contents('/data/moodledata/steps.json', 'step10', FILE_APPEND);
+}
+// ----------------------------
+```
+
+if the step 10 is never called, you have a problem in your classfile
+
+#### In my case, i had the follwoing:
+
+```text
+require_once($CFG->libdir . '/externallib.php');
+require_once(__DIR__ . '/locallib.php');
+```
+
+But, the locallib.php didn't existed. 
+
+Maybe you can display an error using 
+
+```text
+error_reporting
+```
+
+but for me it didn't work.
+
+
 
 
 

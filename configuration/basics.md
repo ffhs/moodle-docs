@@ -112,6 +112,10 @@ Array
 
 ```
 {% endtab %}
+
+{% tab title="DB" %}
+This information is stored in the `mdl_user_preferences` table
+{% endtab %}
 {% endtabs %}
 
 ## Get user settings

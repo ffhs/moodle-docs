@@ -23,6 +23,7 @@
   * [Course](api/course/README.md)
     * [Course Modules $cm](api/course/course-modules-usdcm.md)
     * [Access restrictions](api/course/access-restrictions.md)
+    * [Completion and dates](api/course/completion-and-dates.md)
   * [Block](api/block/README.md)
     * [Edit Form](api/block/edit-form.md)
   * [Data Manipulation](api/data-manipulation.md)
