@@ -13,6 +13,16 @@ More information ca be found here
 
 [https://docs.moodle.org/dev/Writing\_PHPUnit\_tests](https://docs.moodle.org/dev/Writing_PHPUnit_tests)
 
+## Run unit tests
+
+### Run in PhpStorm
+
+### Reset the database
+
+```text
+php /var/www/html/moodle/admin/tool/phpunit/cli/init.php
+```
+
 ## Advanced Testcase
 
 #### Resetting the test database and get a data generator \(faker\)
