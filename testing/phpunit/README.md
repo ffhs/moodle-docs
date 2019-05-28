@@ -131,20 +131,9 @@ $faker->numberBetween(10,20);
 
 ### Testing the data generator
 
-#### Generate a new instance of an attendance activity
+#### Generate a new instance of an activity
 
-```php
-// Create a new course
-$newcourse = $this->generator->create_course();
-
-protected function create_new_attendance_activity($course){
-    $record['course'] = $course->id;
-
-    /** @var mod_attendance_generator $plugingenerator */
-    $plugingenerator = $this->generator->get_plugin_generator('mod_attendance');
-    return $plugingenerator->create_instance($record);
-}
-```
+{% page-ref page="generate-activities.md" %}
 
 #### Generate a new block instance
 

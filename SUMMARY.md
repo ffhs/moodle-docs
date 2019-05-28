@@ -29,6 +29,7 @@
   * [Data Manipulation](api/data-manipulation.md)
 * [Testing](testing/README.md)
   * [PHPUnit](testing/phpunit/README.md)
+    * [Generate Activities](testing/phpunit/generate-activities.md)
     * [Test a filter](testing/phpunit/test-a-filter.md)
   * [Behat](testing/behat.md)
 * [FAQ](faq.md)
