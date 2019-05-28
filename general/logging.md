@@ -6,7 +6,7 @@
 
 ## Logging in moodle programmatically for debugging and monitoring
 
-Since I didn't found any real looging mechanism in moodle, I usualy use just:
+Since I didn't found any real looging mechanism in moodle, I usualy just use:
 
 ```php
 file_put_contents('/data/moodledata/steps.log', 'step10', FILE_APPEND);
