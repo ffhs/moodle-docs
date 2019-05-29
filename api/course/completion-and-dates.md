@@ -31,5 +31,9 @@ if (!empty($course->enddate) && (course_classify_end_date($course) < $today)) {
 }
 ```
 
+#### Get the course completion progress
 
+```php
+$percentage = \core_completion\progress::get_course_progress_percentage($course);
+```
 

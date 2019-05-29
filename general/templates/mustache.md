@@ -4,6 +4,8 @@ The templates in php are attached to the renderers. There is a renderer method "
 
 Note $context is nothing to do with normal Moodle 'contexts'. It is the data passed to the template \(the 'context' mentioned in mustache documentation\).
 
+#### Variables
+
 {% tabs %}
 {% tab title="Call" %}
 ```php
@@ -26,5 +28,19 @@ This `{{{title}}}` is an unescaped variable substitution. Instead of escaping th
 {% endtab %}
 {% endtabs %}
 
+#### Moodle core icons
 
+{% tabs %}
+{% tab title="Usage" %}
+```markup
+{{#pix}} i/course, core, {{#str}} courselink, mod_lti {{/str}}{{/pix}}
+
+{{#pix}} i/star, core, {{#str}} favourites, block_myoverview {{/str}} {{/pix}}
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+@see lib/classes/output/icon\_system\_fontawesome.php
+{% endhint %}
 

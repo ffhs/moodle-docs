@@ -4,11 +4,15 @@ description: 'Roles assigned to Users (Students, Teachers)'
 
 # Roles
 
-### Global Roles
+## Global Roles
 
-### Roles in a contex
+```text
+@todo
+```
 
-### Get all roles a user belongs to
+## Roles in a contex
+
+#### Get all roles a user belongs to
 
 {% tabs %}
 {% tab title="Call" %}
@@ -61,7 +65,7 @@ if ($rolesinsystemids == null) {
 {% endtab %}
 {% endtabs %}
 
-### Check if a user has a certain role somewhere on moodle
+#### Check if a user has a certain role somewhere in moodle
 
 @todo \(function not tested\)
 
@@ -70,5 +74,23 @@ if (user_has_role_assignment($user->id, $roleid))
     echo "User is a teacher in some course";
 ```
 
+#### Get the `teachers of a course`
 
+```php
+$teachernames = [];
+$context = context_course::instance($courseid);
+$role = $DB->get_record('role', array('shortname' => 'editingteacher'));
+$roleusers = get_role_users($role->id, );
+
+// Get all teachers' names as an array according the teacher name style setting.
+$teachernames = array_map(function($obj) {
+    return $obj->firstname . ' ' . $obj->lastname;
+}, $roleusers);
+```
+
+#### Check if a user has a `role in a course`
+
+```text
+@todo
+```
 
