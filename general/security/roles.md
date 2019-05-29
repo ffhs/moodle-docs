@@ -74,7 +74,7 @@ if (user_has_role_assignment($user->id, $roleid))
     echo "User is a teacher in some course";
 ```
 
-#### Get the `teachers of a course`
+#### Get the teachers of a course
 
 ```php
 $teachernames = [];
@@ -88,7 +88,7 @@ $teachernames = array_map(function($obj) {
 }, $roleusers);
 ```
 
-#### Check if a user has a `role in a course`
+#### Check if a user has a role in a course
 
 ```text
 @todo
