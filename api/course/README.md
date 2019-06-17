@@ -207,7 +207,7 @@ final class Generator
 
 mdl\_user\_lastaccess
 
-mdl\_enrol
+mdl\_enrol mdl\_user\_enrolments
 
 ### Get all modules in a course
 
