@@ -32,5 +32,6 @@
     * [Generate Activities](testing/phpunit/generate-activities.md)
     * [Test a filter](testing/phpunit/test-a-filter.md)
   * [Behat](testing/behat.md)
+* [Javascript](javascript.md)
 * [FAQ](faq.md)
 
