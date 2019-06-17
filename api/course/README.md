@@ -201,6 +201,14 @@ final class Generator
 {% endtab %}
 {% endtabs %}
 
+#### Get the courses the current user has last accessed
+
+@todo @see 
+
+mdl\_user\_lastaccess
+
+mdl\_enrol
+
 ### Get all modules in a course
 
 {% tabs %}
