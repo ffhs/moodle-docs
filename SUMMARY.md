@@ -27,6 +27,7 @@
   * [Block](api/block/README.md)
     * [Edit Form](api/block/edit-form.md)
   * [Data Manipulation](api/data-manipulation.md)
+  * [Plugins](api/plugins.md)
 * [Testing](testing/README.md)
   * [PHPUnit](testing/phpunit/README.md)
     * [Generate Activities](testing/phpunit/generate-activities.md)

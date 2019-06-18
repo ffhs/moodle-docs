@@ -69,9 +69,18 @@ stdClass Object (
 
 {% page-ref page="../api/course/" %}
 
-## Get user preferences
+## User preferences
+
+Preferences are stored choices a user had done.  
+- Is that course a favorite for this user?
 
 [https://docs.moodle.org/dev/Preference\_API](https://docs.moodle.org/dev/Preference_API)
+
+{% hint style="info" %}
+Preferences are stored with the prefix "preference\_"
+{% endhint %}
+
+#### Get preference
 
 {% tabs %}
 {% tab title="Call" %}
@@ -115,6 +124,24 @@ Array
 
 {% tab title="DB" %}
 This information is stored in the `mdl_user_preferences` table
+{% endtab %}
+{% endtabs %}
+
+#### Save preference
+
+{% tabs %}
+{% tab title="Call" %}
+```php
+if (core_user::can_edit_preference($name, $user)) {
+    // Clean up preference for saving
+    $value = core_user::clean_preference($value, $name);
+    set_user_preference($name, $value, $user->id);
+}
+```
+{% endtab %}
+
+{% tab title="Response" %}
+
 {% endtab %}
 {% endtabs %}
 
