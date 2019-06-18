@@ -78,7 +78,9 @@ Preferences are stored choices a user had done.
 Preferences are stored with the prefix "preference\_"
 {% endhint %}
 
-#### Get preference
+{% hint style="info" %}
+The preferences are cached in **$USER-&gt;preferences**
+{% endhint %}
 
 [https://docs.moodle.org/dev/Preference\_API](https://docs.moodle.org/dev/Preference_API)
 
@@ -99,6 +101,8 @@ if (core_user::can_edit_preference($name, $user)) {
 
 {% endtab %}
 {% endtabs %}
+
+#### Get preference
 
 {% tabs %}
 {% tab title="Call" %}
