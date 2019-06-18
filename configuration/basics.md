@@ -74,8 +74,6 @@ stdClass Object (
 Preferences are stored choices a user had done.  
 - Is that course a favorite for this user?
 
-#### Get user preferences
-
 {% hint style="info" %}
 Preferences are stored with the prefix "preference\_"
 {% endhint %}
