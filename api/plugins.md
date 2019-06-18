@@ -21,9 +21,15 @@ if ($pluginsfunction = get_plugins_with_function('user_preferences')) {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 {% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}
+
+
+
+{% code-tabs %}
+{% code-tabs-item title="lib/moodlelib.php" %}
+```php
+function get_list_of_plugins($directory='mod', $exclude='', $basedir='')
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
