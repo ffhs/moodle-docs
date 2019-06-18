@@ -26,7 +26,7 @@ var filter = option.attr('data-filter');
 #### Set an attribute value
 
 ```javascript
-var filter = option.attr('data-filter','xxx');
+option.attr('data-filter','xxx');
 ```
 
 ### Add and remove classes
@@ -35,7 +35,7 @@ var filter = option.attr('data-filter','xxx');
 // On a single instance
 option.addClass('active');
 // On multiple instances
-dropdownItems.removeClass('active');
+menuItems.removeClass('active');
 
 ```
 
