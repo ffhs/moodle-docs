@@ -17,8 +17,6 @@ if ($pluginsfunction = get_plugins_with_function('user_preferences')) {
         }
     }
 }
-function get_list_of_plugins($directory='mod', $exclude='', $basedir='')
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}

@@ -71,6 +71,8 @@ load_classes()
 
 > See also the DB table **mdl\_files**
 
+{% page-ref page="api/plugins.md" %}
+
 ## I've created a Moodle Ajax Service - The only result is an popup that says `undefinied`, what can be done? No error message, no log.. nothing :\(
 
 * [ ] Check if the `classname`, `methodname` and `classpath` in `/db/services.php` are correct
