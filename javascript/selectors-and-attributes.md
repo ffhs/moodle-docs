@@ -35,7 +35,7 @@ option.attr('data-filter','xxx');
 // On a single instance
 option.addClass('active');
 // On multiple instances
-menuItems.removeClass('active');
+dropdownItems.removeClass('active');
 
 ```
 
