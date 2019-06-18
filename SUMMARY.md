@@ -33,6 +33,7 @@
     * [Generate Activities](testing/phpunit/generate-activities.md)
     * [Test a filter](testing/phpunit/test-a-filter.md)
   * [Behat](testing/behat.md)
-* [Javascript](javascript.md)
+* [Javascript](javascript/README.md)
+  * [Selectors and Attributes](javascript/selectors-and-attributes.md)
 * [FAQ](faq.md)
 
