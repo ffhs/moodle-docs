@@ -29,13 +29,13 @@ var filter = option.attr('data-filter');
 option.attr('data-filter','xxx');
 ```
 
-### Add and remove classes
+## Classes
 
 ```javascript
 // On a single instance
 option.addClass('active');
 // On multiple instances
-dropdownItems.removeClass('active');
+menuItems.removeClass('active');
 
 ```
 
