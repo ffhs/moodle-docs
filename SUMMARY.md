@@ -14,6 +14,7 @@
   * [Parameter](general/usdget-and-usdpost-parameter.md)
   * [Templates](general/templates/README.md)
     * [Mustache](general/templates/mustache.md)
+  * [Mobile](general/mobile.md)
 * [Configuration](configuration/README.md)
   * [Basics](configuration/basics.md)
   * [Global Settings](configuration/global-settings/README.md)
