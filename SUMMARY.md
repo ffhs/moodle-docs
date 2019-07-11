@@ -27,6 +27,8 @@
     * [Completion and dates](api/course/completion-and-dates.md)
   * [Block](api/block/README.md)
     * [Edit Form](api/block/edit-form.md)
+  * [User](api/user/README.md)
+    * [User Webservice](api/user/user-webservice.md)
   * [Data Manipulation](api/data-manipulation.md)
   * [Plugins](api/plugins.md)
 * [Testing](testing/README.md)
