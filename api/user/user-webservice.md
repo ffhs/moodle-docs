@@ -8,14 +8,12 @@
         "wstoken": "<token>",
         "wsfunction": "core_user_update_users",
         "moodlewsrestformat": "json",
-		{
-			"users": [
-				{
-					"id": 10264,
-					"idnumber": "4BFDFAD606CA409794B99C0693B932EB"
-				}
-			]
-		}
+		"users": [
+			{
+				"id": 10264,
+				"idnumber": "4BFDFAD606CA409794B99C0693B932EB"
+			}
+		]
     },
     "debug": false
 }
