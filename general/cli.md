@@ -12,3 +12,7 @@ php /var/www/html/moodle/admin/cli/purge_caches.php
 /admin/purgecaches.php
 ```
 
+#### Run cron from cli
+
+{% page-ref page="scheduler/cron.md" %}
+
