@@ -16,6 +16,7 @@
     * [Mustache](general/templates/mustache.md)
   * [Mobile](general/mobile.md)
   * [Cli](general/cli.md)
+  * [Recyclebin](general/recyclebin.md)
 * [Configuration](configuration/README.md)
   * [Basics](configuration/basics.md)
   * [Global Settings](configuration/global-settings/README.md)
