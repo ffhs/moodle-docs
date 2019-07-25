@@ -6,6 +6,8 @@
 $user = $DB->get_record('user', ['id' => '1']);
 ```
 
+{% tabs %}
+{% tab title="Call" %}
 ```php
 $DB->get_record_select(
     $table, 
@@ -15,6 +17,18 @@ $DB->get_record_select(
     $strictness=IGNORE_MISSING
 )
 ```
+{% endtab %}
+
+{% tab title="Example" %}
+```php
+$courseshort = $DB->get_record_select(
+    'course', 
+    'shortname = ? AND id != ?', 
+    array($currentshortname, $courseid)
+);
+```
+{% endtab %}
+{% endtabs %}
 
 #### Get data directly from the database using a sql query
 
