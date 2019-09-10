@@ -3,6 +3,6 @@
 ## Run cron manually from cli
 
 ```bash
-php /var/www/html/moodle/admin/cli/cron.php
+sudo -u apache /usr/bin/php /var/www/html/moodle/admin/cli/cron.php 
 ```
 
