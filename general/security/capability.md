@@ -6,11 +6,7 @@ A conveniend function that tests has\_capability, and displays an error if the u
 
 ```php
 $coursecontext = context_course::instance($course->id);
-try{
-    require_capability('moodle/course:manageactivities', $coursecontext)
-}catch(\Exception $e){
-    // Handle Exception
-}
+require_capability('moodle/course:manageactivities', $coursecontext)
 ```
 
 ### Check if current user has a capability in a specific course category
