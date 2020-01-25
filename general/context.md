@@ -15,5 +15,3 @@ lib/accesslib.php
 * context\_system
 * context\_user
 
-
-
