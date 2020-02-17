@@ -15,3 +15,15 @@ lib/accesslib.php
 * context\_system
 * context\_user
 
+## Get context infomation
+
+
+
+{% tabs %}
+{% tab title="PHP" %}
+```php
+list($context, $course, $cm) = get_context_info_array($contextid);
+```
+{% endtab %}
+{% endtabs %}
+
