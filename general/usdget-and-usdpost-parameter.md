@@ -2,17 +2,15 @@
 description: Retriefing $GET and $POST parameters
 ---
 
-# Parameter
+# HTTP Parameter
 
-{% code-tabs %}
-{% code-tabs-item title="lib/moodlelib.php" %}
+{% code title="lib/moodlelib.php" %}
 ```php
 function optional_param($parname, $default, $type) {
 
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ```php
 function required_param_array($parname, $type) {
