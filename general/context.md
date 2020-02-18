@@ -15,7 +15,7 @@ lib/accesslib.php
 * context\_system
 * context\_user
 
-## Get context infomation
+## Get context infomation array by context id
 
 
 
@@ -27,5 +27,10 @@ list($context, $course, $cm) = get_context_info_array($contextid);
 {% endtab %}
 {% endtabs %}
 
+## Get the context by course id
 
+```php
+$context = context_course::instance($courseid);
+echo "Context id: ".$context->id;
+```
 
