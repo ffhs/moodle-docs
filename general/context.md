@@ -27,7 +27,7 @@ list($context, $course, $cm) = get_context_info_array($contextid);
 {% endtab %}
 {% endtabs %}
 
-## Get the context by course id
+## Get the course context by course id
 
 ```php
 $context = context_course::instance($courseid);
