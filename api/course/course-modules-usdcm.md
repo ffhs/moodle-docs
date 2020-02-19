@@ -36,7 +36,7 @@ course_delete_module($book->cmid);
 * page 
 * questionnaire 
 * quiz 
-* resource 
+* resource \(File\)
 * scheduler 
 * scorm 
 * survey 
