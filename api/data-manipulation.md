@@ -1,5 +1,9 @@
 # Data Manipulation
 
+## DB-Schema
+
+{% embed url="https://examulator.com/er/output/index.html" %}
+
 ## Get data directly from the database
 
 ```php
