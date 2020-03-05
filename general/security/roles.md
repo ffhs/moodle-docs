@@ -94,3 +94,18 @@ $teachernames = array_map(function($obj) {
 @todo
 ```
 
+#### Get role with roles function
+
+```php
+// The true at the end is used to return an array for select elements.
+// So this returns an array with array(roleid => 'originalrolename')
+$options = role_fix_names(
+     get_all_roles(), 
+     context_system::instance(), 
+     ROLENAME_ORIGINAL, 
+     true
+     );
+```
+
+#### 
+
