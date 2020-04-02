@@ -113,8 +113,7 @@ Usually you don't want to give that permission to other global roles
 
 Take a look at the following functions: \(No explanation, just for knowing what to google for\)
 
-{% code-tabs %}
-{% code-tabs-item title="settings.php" %}
+{% code title="settings.php" %}
 ```php
 $examoverview_category = new admin_category('block_exam_overview', 'Exam Overview');
 $ADMIN->add('blocksettings', $examoverview_category);
@@ -132,6 +131,5 @@ $ADMIN->add('block_exam_overview', $settings);
 $settings->add(new admin_setting_pickroles($name, $title, $description, $default));
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

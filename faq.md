@@ -8,8 +8,7 @@ description: Common questions about Moodle and development.
 
 The `$CFG` is the global config object of Moodle which must be included with `global $CFG;` and you can access this object from any **function or class** without having to do anything special. Just reference with`global $CFG;` to access this object. The object of `$this->config` is a config object for a given class e.g. `antivirus\scanner.php`, here is  a part of the code snippet:
 
-{% code-tabs %}
-{% code-tabs-item title="antivirus\\scanner.php" %}
+{% code title="antivirus\\scanner.php" %}
 ```php
 /** @var stdClass the config for antivirus */
 protected $config;
@@ -27,8 +26,7 @@ public function __construct() {
     $this->config = get_config($ref->getNamespaceName());
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## What is a moodle component?
 
@@ -36,8 +34,7 @@ A component can be a **moodle plugin**, such as an activity or an **core subsyst
 
 * The term component is used in some places such as in the file api.
 
-{% code-tabs %}
-{% code-tabs-item title="lib/filelib.php" %}
+{% code title="lib/filelib.php" %}
 ```php
 function file_save_draft_area_files(
     $draftitemid, 
@@ -50,8 +47,7 @@ function file_save_draft_area_files(
     $forcehttps=false) {
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 * The function `get_string` uses the **component** keyword as well
 
@@ -81,13 +77,11 @@ load_classes()
 
 Replace the following \(temporarily!\):
 
-{% code-tabs %}
-{% code-tabs-item title="lib/externallib.php" %}
+{% code title="lib/externallib.php" %}
 ```php
 require_once($function->classpath);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 with
 

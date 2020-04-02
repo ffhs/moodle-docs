@@ -2,8 +2,7 @@
 
 Recycled courses are stored in files: @see 
 
-{% code-tabs %}
-{% code-tabs-item title="admin/tool/recyclebin/classes/course\_bin.php" %}
+{% code title="admin/tool/recyclebin/classes/course\_bin.php" %}
 ```php
 // #214
 $files = $fs->get_area_files(
@@ -15,8 +14,7 @@ $files = $fs->get_area_files(
     false
 );
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 The recycled items are linked in the db table `mdl_tool_recyclebin_course`, but the orginal ids are lost
 

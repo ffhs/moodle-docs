@@ -33,6 +33,7 @@
     * [User Webservice](api/user/user-webservice.md)
   * [Data Manipulation](api/data-manipulation.md)
   * [Plugins](api/plugins.md)
+  * [Form](api/form.md)
 * [Testing](testing/README.md)
   * [PHPUnit](testing/phpunit/README.md)
     * [Generate Activities](testing/phpunit/generate-activities.md)

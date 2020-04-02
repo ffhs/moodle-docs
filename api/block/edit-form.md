@@ -10,8 +10,7 @@ description: >-
 
 * The key of an form element must contain a `config_` prefix! Otherwise the value will not be saved.
 
-{% code-tabs %}
-{% code-tabs-item title="blocks/course\_list/edit\_form.php" %}
+{% code title="blocks/course\_list/edit\_form.php" %}
 ```php
 class block_course_list_edit_form extends block_edit_form {
     protected function specific_definition($mform) {
@@ -23,14 +22,19 @@ class block_course_list_edit_form extends block_edit_form {
         $mform->addElement('checkbox', 'config_enablesearchfield', get_string('configenablesearchfield', 'block_course_list'));
         $mform->setType('config_enablesearchfield', PARAM_INT);
     }
+    
+
+    function validation($data, $files) {
+        $errors = parent::validation($data, $files);
+        $errors['config_title'] = get_string('config_title_error', 'block_course_list')
+        return $errors;
+    }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Access the configured data \(in the block\)
 
-{% code-tabs %}
-{% code-tabs-item title="blocks/course\_list/block\_course\_list.php" %}
+{% code title="blocks/course\_list/block\_course\_list.php" %}
 ```php
 // Get the block title from config
 if (!empty($this->config->title)) {
@@ -39,10 +43,11 @@ if (!empty($this->config->title)) {
     $this->title = get_string('mycourses');
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### More Informations
 
-* [ https://docs.moodle.org/dev/lib/formslib.php\_Form\_Definition\#advcheckbox](%20https://docs.moodle.org/dev/lib/formslib.php_Form_Definition#advcheckbox)
+* [ https://docs.moodle.org/dev/lib/formslib.php\_Form\_Definition](%20https://docs.moodle.org/dev/lib/formslib.php_Form_Definition#advcheckbox)
+
+
 

@@ -45,8 +45,8 @@ $roles = get_all_roles();
 $context = context_module::instance($cm->id);
 
 foreach ($roles as $role) {
-	$role = $DB->get_record('role', array('shortname' => $role->shortname));
-	$capabilities = get_capabilities_from_role_on_context($role, $context);
+    $role = $DB->get_record('role', array('shortname' => $role->shortname));
+    $capabilities = get_capabilities_from_role_on_context($role, $context);
 }
 ```
 
@@ -54,7 +54,7 @@ This capabilities can be set on a different course module \(like `inherit`...\):
 
 ```php
 foreach ($capabilities as $cap) {
-	assign_capability($cap->capability, $cap->permission, $cap->roleid, $context->id, true);
+    assign_capability($cap->capability, $cap->permission, $cap->roleid, $context->id, true);
 }
 ```
 
