@@ -15,6 +15,22 @@ More information ca be found here
 
 ## Run unit tests
 
+### Run in the console
+
+{% hint style="warning" %}
+Run all unit-tests... if it works, it works  
+{% endhint %}
+
+```php
+vendor/bin/phpunit
+```
+
+#### Run a single test
+
+```php
+vendor/bin/phpunit blocks/course_checker/tests/checker_attendance_test.php
+```
+
 ### Run in PhpStorm
 
 ```text
