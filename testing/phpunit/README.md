@@ -25,6 +25,12 @@ Run all unit-tests... if it works, it works
 vendor/bin/phpunit
 ```
 
+#### Run all tests in a folder
+
+```php
+vendor/bin/phpunit blocks/course_checker/tests/*
+```
+
 #### Run a single test
 
 ```php
