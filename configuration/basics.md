@@ -12,7 +12,7 @@ $courseconfig = get_config('moodlecourse');
 {% endtab %}
 
 {% tab title="Respose" %}
-```text
+```php
 stdClass Object
 (
     [coursedisplay] => 0
