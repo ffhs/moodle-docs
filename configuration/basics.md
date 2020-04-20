@@ -37,6 +37,8 @@ stdClass Object
 {% endtab %}
 {% endtabs %}
 
+* If the response doesn't fit your needs. Maybe your are more happy with the default course object. `get_course($courseid)` .
+
 #### Get the configuration of your plugin
 
 {% tabs %}
@@ -64,8 +66,6 @@ stdClass Object (
 ```
 {% endtab %}
 {% endtabs %}
-
-* If the response doesn't fit your needs. Maybe your are more happy with the default course object. `get_course($courseid)` .
 
 {% page-ref page="../api/course/" %}
 
