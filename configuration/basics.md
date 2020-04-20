@@ -37,6 +37,70 @@ stdClass Object
 {% endtab %}
 {% endtabs %}
 
+#### More Course settings
+
+{% tabs %}
+{% tab title="Call" %}
+```php
+get_course($courseid)
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```php
+    [id] => 14
+    [category] => 1
+    [sortorder] => 0
+    [fullname] => BWL1, Managementorientierte Betriebswirtschaft, BSc BOEK 2018, ZH6-Mo, HS18/19, Jung Adalbert
+    [shortname] => BWL1.BSc BOEK 2018.ZH6-Mo.HS18/19
+    [idnumber] =>
+    [summary] =>
+    [summaryformat] => 0
+    [format] => ffhs
+    [showgrades] => 1
+    [newsitems] => 0
+    [startdate] => 1531951200
+    [enddate] => 0
+    [marker] => 0
+    [maxbytes] => 20971520
+    [legacyfiles] => 2
+    [showreports] => 0
+    [visible] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupmodeforce] => 0
+    [defaultgroupingid] => 0
+    [lang] =>
+    [calendartype] =>
+    [theme] =>
+    [timecreated] => 1531989974
+    [timemodified] => 1563380515
+    [requested] => 0
+    [enablecompletion] => 1
+    [completionnotify] => 0
+    [cacherev] => 1587129020
+)
+
+```
+{% endtab %}
+{% endtabs %}
+
+* If the response doesn't fit your needs. Maybe your are more happy with the default course object. `get_course($courseid)` .
+
+#### Get the Course Format informations
+
+{% tabs %}
+{% tab title="Call" %}
+```php
+$courseformat = course_get_format($course->id);
+```
+{% endtab %}
+
+{% tab title="Response" %}
+
+{% endtab %}
+{% endtabs %}
+
 #### Get the configuration of your plugin
 
 {% tabs %}
@@ -64,8 +128,6 @@ stdClass Object (
 ```
 {% endtab %}
 {% endtabs %}
-
-* If the response doesn't fit your needs. Maybe your are more happy with the default course object. `get_course($courseid)` .
 
 {% page-ref page="../api/course/" %}
 
