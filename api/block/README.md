@@ -30,7 +30,7 @@ public function hide_header() {
   return true;
 }
 
-// Enable global configuration
+// Enable global configuration.
 public function has_config() {
   return true;
 }
