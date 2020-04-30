@@ -40,3 +40,17 @@ class block_course_checker extends block_base {
     $this->instance->parentcontextid
 ```
 
+## Get context with direct db query
+
+{% hint style="warning" %}
+If you can prevent this, do it.
+{% endhint %}
+
+```php
+$context = $DB->get_record('context', ['instanceid' => $course->id, 'contextlevel' => CONTEXT_COURSE]);
+$blockexists = $DB->get_record('block_instances', [
+        'blockname' => self::BLOCK_TYPE_COMPLETIONPROGRESS,
+        'parentcontextid' => $context->id
+]);
+```
+
