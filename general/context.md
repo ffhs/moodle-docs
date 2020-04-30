@@ -32,7 +32,7 @@ $coursecontext = context_course::instance($courseid);
 echo "Context id: ".$coursecontext->id;
 ```
 
-* `get_context_instance` is debricated
+* `get_context_instance`is debricated
 
 ## Get context of parent
 
