@@ -3,7 +3,7 @@
 #### Get a coursemodule by instance
 
 ```php
-$cm = get_coursemodule_from_instance('quiz', $quiz1->id, $this->course->id);
+$cm = get_coursemodule_from_instance('quiz', $quiz->id, $this->course->id);
 ```
 
 #### Delete course module
