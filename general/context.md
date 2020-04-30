@@ -28,14 +28,11 @@ list($context, $course, $cm) = get_context_info_array($contextid);
 ## Get the course context by course id
 
 ```php
-$context = context_course::instance($courseid);
-echo "Context id: ".$context->id;
+$coursecontext = context_course::instance($courseid);
+echo "Context id: ".$coursecontext->id;
 ```
 
-```php
-// Not tested yet..
-$coursecontext = get_context_instance(CONTEXT_COURSE, $COURSE->id);
-```
+* `get_context_instance` is debricated
 
 ## Get context of parent
 
