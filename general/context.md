@@ -32,5 +32,11 @@ $context = context_course::instance($courseid);
 echo "Context id: ".$context->id;
 ```
 
+## Get context of parent
 
+```php
+class block_course_checker extends block_base {
+    // [..]
+    $this->instance->parentcontextid
+```
 
