@@ -2,7 +2,7 @@
 
 ## Get a course 
 
-#### Get a course by its id
+### Get a course by its id
 
 {% tabs %}
 {% tab title="Call" %}
@@ -51,7 +51,7 @@ stdClass Object
 {% endtab %}
 {% endtabs %}
 
-#### Get a course by the global variable $COURSE
+### Get a course by the global variable $COURSE
 
 * Attention! Be sure you are in a context where the global variable is initialized.
 
@@ -109,7 +109,7 @@ stdClass Object
 $PAGE->set_course($course);
 ```
 
-#### Get a course by directly accessing the database
+### Get a course by directly accessing the database
 
 * This method allows you to add search parameters
 
