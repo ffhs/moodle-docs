@@ -32,6 +32,11 @@ $context = context_course::instance($courseid);
 echo "Context id: ".$context->id;
 ```
 
+```php
+// Not tested yet..
+$coursecontext = get_context_instance(CONTEXT_COURSE, $COURSE->id);
+```
+
 ## Get context of parent
 
 ```php
@@ -53,4 +58,6 @@ $blockexists = $DB->get_record('block_instances', [
         'parentcontextid' => $context->id
 ]);
 ```
+
+## 
 
