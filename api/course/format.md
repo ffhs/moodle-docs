@@ -10,7 +10,7 @@ course_get_format($COURSE)->get_format_options();
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```php
 Array
 (
     [numsections] => 7
