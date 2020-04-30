@@ -103,6 +103,12 @@ stdClass Object
 {% endtab %}
 {% endtabs %}
 
+#### In case the variable $COURSE is empty
+
+```php
+$PAGE->set_course($course);
+```
+
 #### Get a course by directly accessing the database
 
 * This method allows you to add search parameters

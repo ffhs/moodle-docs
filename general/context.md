@@ -17,8 +17,6 @@ lib/accesslib.php
 
 ## Get context infomation array by context id
 
-
-
 {% tabs %}
 {% tab title="PHP" %}
 ```php
@@ -33,4 +31,6 @@ list($context, $course, $cm) = get_context_info_array($contextid);
 $context = context_course::instance($courseid);
 echo "Context id: ".$context->id;
 ```
+
+
 
