@@ -42,3 +42,9 @@ public function applicable_formats() {
 
 ```
 
+{% hint style="warning" %}
+Don't use `global PAGE` in a block use`$this-page`
+{% endhint %}
+
+
+
