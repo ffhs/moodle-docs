@@ -45,7 +45,7 @@ if (!empty($this->config->title)) {
 ```
 {% endcode %}
 
-### Access the configured data from an other context
+### Access the configured data \(in an other context\)
 
 ```php
 $PAGE->set_course($this->course);
