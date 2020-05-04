@@ -45,6 +45,23 @@ if (!empty($this->config->title)) {
 ```
 {% endcode %}
 
+### Access the configured data from an other context
+
+```php
+$PAGE->set_course($this->course);
+$coursecontext = context_course::instance($COURSE->id);
+$blockrecords = $DB->get_records('block_instances',
+                        array('blockname' => 'course_checker', 'parentcontextid' => $coursecontext->id));
+foreach ($blockrecords as $b) {
+    $blockinstance = block_instance('course_checker', $b);
+    if ($blockinstance->config->link_whitelist) {
+        $ignoreddomains = array_filter(array_map('trim', explode("\n", $blockinstance->config->link_whitelist)));
+        $this->ignoredomains = array_merge($ignoreddomains, $this->ignoredomains);
+    }
+    break;
+}
+```
+
 ### More Informations
 
 * [ https://docs.moodle.org/dev/lib/formslib.php\_Form\_Definition](%20https://docs.moodle.org/dev/lib/formslib.php_Form_Definition#advcheckbox)
